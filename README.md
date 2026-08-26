@@ -167,3 +167,7 @@ jupyter notebook
 - **OpenCV** — گرفتن تصویر از وب‌کم و رسم عناصر بازی
 - **MediaPipe** — تشخیص دقیق نقاط دست در لحظه
 - **NumPy** — محاسبات مربوط به چیدمان و موقعیت قطعات
+
+---
+
+Thank you for checking out this project! ✨
