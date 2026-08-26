@@ -13,6 +13,9 @@ Pick a photo you love, choose a difficulty, and piece it back together with a si
 - 🔵 Live self-view in a small camera circle, so you always see your hand
 - 🖼️ Faint reference outline of the original photo shown on the board to guide you
 
+## 🎥 Demo
+
+*(add a screenshot or GIF here)*
 
 ## 📦 Requirements
 
@@ -23,3 +26,72 @@ Pick a photo you love, choose a difficulty, and piece it back together with a si
 
 ```bash
 git clone https://github.com/kamandNajari/Hand_Puzzle_Game.git
+```
+
+If you don't have Git installed, you can also download the project directly:
+
+1. Go to the repository page on GitHub
+2. Click the green **Code** button
+3. Select **Download ZIP**
+4. Extract the ZIP file to a folder on your computer
+
+## 🚀 Installation
+
+```bash
+cd Hand_Puzzle_Game
+pip install -r requirements.txt
+```
+
+The hand tracking model is downloaded automatically on first run — no manual setup needed.
+
+## 📓 Running the Notebook
+
+Make sure you have Jupyter installed:
+
+```bash
+pip install jupyter
+```
+
+Then launch it:
+
+```bash
+jupyter notebook
+```
+
+Open `Hand_Puzzle_Game.ipynb` from the Jupyter interface and run the cell (Shift + Enter).
+
+## ▶️ How to Play
+
+1. Run the notebook — a file picker will open, choose any photo from your device
+2. Select a difficulty level from the console: Easy (3x3), Medium (4x4), or Hard (5x5)
+3. The puzzle board appears in the center of the screen with a faint outline of your photo as a guide
+4. Scattered tile pieces appear around the board
+5. Use your hand to pick up and place each tile onto its matching spot
+
+## 🖐️ Hand Controls
+
+| Gesture | Action |
+|---------|--------|
+| 👌 Pinch (thumb + index finger together) near a piece | Grab the piece |
+| Move your pinched hand | Drag the piece across the screen |
+| Release the pinch | Drop the piece at its current position |
+| Drop a piece near its correct board position | Piece snaps and locks into place automatically |
+
+**Important:** you must bring your **thumb and index finger together** (pinch) to grab and move a piece — just pointing at it with your index finger alone will not work.
+
+## ⌨️ Keyboard Controls
+
+| Key | Action |
+|-----|--------|
+| `r` | Restart the puzzle with a new shuffle |
+| `q` | Quit the application |
+
+## 🛠️ Tech Stack
+
+- [OpenCV](https://opencv.org/) — video capture and rendering
+- [MediaPipe](https://developers.google.com/mediapipe) — hand landmark detection
+- [NumPy](https://numpy.org/) — numerical operations for tile placement and layout
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details. 
